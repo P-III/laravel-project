@@ -7,7 +7,23 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @vite('resources/css/app.css')
 </head>
-<body class="bg-gray-100 dark:bg-gray-900">
+<body class="bg-gray-100 dark:bg-gray-900 min-h-screen p-6">
+<nav class="bg-white rounded-lg shadow-lg p-4 mb-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold text-blue-900">
+                Stock Management System
+            </div>
+            <div class="space-x-6">
+                <a href="/Dashboard" class="text-gray-700 hover:text-blue-900">Dashboard</a>
+                <a href="/Students" class="text-gray-700 hover:text-blue-900">Students</a>
+                <a href="/courses" class="text-gray-700 hover:text-blue-900">Courses</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-gray-600">Logged In as:</span>
+                <a href="/Logout" class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Logout</a>
+            </div>
+        </div>
+    </nav>
     <div class="container mx-auto px-4 py-8">
         <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">Available Courses</h1>
 
@@ -42,27 +58,3 @@
     @vite('resources/js/app.js')
 </body>
 </html>
-
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div class="flex items-center">
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Student System</span>
-        </div>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li>
-                    <a href="{{ route('Dashboard') }}" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Dashboard</a>
-                </li>
-                <li>
-                    <a href="{{ route('Students.index') }}" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Students</a>
-                </li>
-                <li>
-                    <a href="{{ route('courses') }}" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Courses</a>
-                </li>
-                <li>
-                    <a href="/Logout" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Logout</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>

@@ -15,7 +15,7 @@
             <div class="space-x-6">
                 <a href="/Dashboard" class="text-gray-700 hover:text-blue-900">Dashboard</a>
                 <a href="/Students" class="text-gray-700 hover:text-blue-900">Students</a>
-                <a href="/reports" class="text-gray-700 hover:text-blue-900">Reports</a>
+                <a href="/courses" class="text-gray-700 hover:text-blue-900">Courses</a>
             </div>
             <div class="flex items-center gap-4">
                 <span class="text-gray-600">Logged In as:{{$username}}</span>
